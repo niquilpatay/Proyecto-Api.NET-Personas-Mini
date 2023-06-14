@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Prog3Api.NET.props" />
+</Project>

@@ -1,0 +1,67 @@
+D:\escritorio\UTN\ReposClones\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.csproj.AssemblyReference.cache
+D:\escritorio\UTN\ReposClones\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.GeneratedMSBuildEditorConfig.editorconfig
+D:\escritorio\UTN\ReposClones\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.AssemblyInfoInputs.cache
+D:\escritorio\UTN\ReposClones\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.AssemblyInfo.cs
+D:\escritorio\UTN\ReposClones\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.csproj.CoreCompileInputs.cache
+D:\escritorio\UTN\ReposClones\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.MvcApplicationPartsAssemblyInfo.cs
+D:\escritorio\UTN\ReposClones\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.MvcApplicationPartsAssemblyInfo.cache
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\appsettings.Development.json
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\appsettings.json
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Prog3Api.NET.exe
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Prog3Api.NET.deps.json
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Prog3Api.NET.runtimeconfig.json
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Prog3Api.NET.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Prog3Api.NET.pdb
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\FluentValidation.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Humanizer.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\MediatR.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\MediatR.Contracts.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Mono.TextTemplating.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Npgsql.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\System.CodeDom.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\System.Text.Json.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.csproj.AssemblyReference.cache
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.GeneratedMSBuildEditorConfig.editorconfig
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.AssemblyInfoInputs.cache
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.AssemblyInfo.cs
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.csproj.CoreCompileInputs.cache
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.MvcApplicationPartsAssemblyInfo.cs
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.MvcApplicationPartsAssemblyInfo.cache
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\staticwebassets\msbuild.Prog3Api.NET.Microsoft.AspNetCore.StaticWebAssets.props
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\staticwebassets\msbuild.build.Prog3Api.NET.props
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Prog3Api.NET.props
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Prog3Api.NET.props
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\staticwebassets.pack.json
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\staticwebassets.build.json
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\staticwebassets.development.json
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\scopedcss\bundle\Prog3Api.NET.styles.css
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.csproj.CopyComplete
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\refint\Prog3Api.NET.dll
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.pdb
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\Prog3Api.NET.genruntimeconfig.cache
+D:\escritorio\UTN\3 - 3er Cuatrimestre (2022)\03 - Programación III\proyectosProg3\Api.NET_01-06\obj\Debug\net6.0\ref\Prog3Api.NET.dll
