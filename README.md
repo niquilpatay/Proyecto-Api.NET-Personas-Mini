@@ -1,7 +1,5 @@
 # Proyecto-Api.NET-Personas-Mini
-API desarrollada en .NET que conecta a una base de datos creada en PosgreSQL con CodeFirst. 
-
-Recursos / prácticas aplicadas:
+API desarrollada en .NET que conecta a una base de datos creada en PosgreSQL con CodeFirst. Recursos / prácticas aplicadas:
 
 . Patrón mediator (reducir complejidad y dependencias entre objetos que se comunican entre sí)
 
