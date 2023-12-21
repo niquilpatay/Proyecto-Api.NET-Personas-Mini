@@ -21,7 +21,6 @@ namespace Prog3Api.NET.Controllers
             _mediator = mediator;
         }
 
-
         //Buscar todas las personas
         //Devuelve un resultado de la acción y una lista de personas
         [HttpGet]

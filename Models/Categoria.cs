@@ -7,6 +7,6 @@ namespace Prog3Api.NET.Models
     public class Categoria
     {
         public int Id { get; set; } //Atributo Id genera automáticamente la PK al realizar la migración
-        public string Nombre { get; set; }
+        public string Nombre { get; set; } 
     }
 }

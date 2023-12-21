@@ -1,0 +1,241 @@
+INSTALAR PAQUETES:
+
+Microsoft.EntityFrameworkCore
+Microsoft.EntityFrameworkCore.Analyzers
+Microsoft.EntityFrameworkCore.Design
+Microsoft.EntityFrameworkCore.Tools
+MediatR.Extensions.Microsoft.DependencyInjection
+FluentValidation.AspNetCore
+Npgsql.EntityFrameworkCore.PostgreSQL
+
+CREAR BD CODEFIRST (POSTGRE SQL):
+1. Conectar a PostgreSQL y crear un usuario de ejemplo "user_ejemplo" -> asignar contraseña a usuario
+2. Otorgar privilegios a usuario: Can login? - Create databases?
+3. Ir a appsettings.Development.json y añadir código:
+/*  
+    "ConnectionStrings": {
+    "ConexionDatabase": "Server=localhost;Database=api_ejemplo;Port:5432;User Id=user_ejemplo;Password:123456;"
+  },
+*/
+4. Crear clases CodeFirst en ContextDB y Models:
+    //Heredar clase de Entity Framework para administrar base de datos
+    public class ContextDB : DbContext
+    {
+        //Heredar opciones por defecto de la clase base
+        public ContextDB(DbContextOptions<ContextDB> options) : base(options) 
+        {
+        }
+
+        //DbSet: creación de tabla <Model de tabla a crear>
+        public DbSet<Persona> Personas { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Categoria> Categorias { get; set; }
+    }
+
+{
+    //Indicar tabla SQL
+    [Table("personas")]
+    public class Persona
+    {
+        public int Id { get; set; } //Atributo Id genera automáticamente la PK al realizar la migración
+        public string Nombre { get; set; }
+    }
+}
+
+{
+    //Indicar tabla SQL
+    [Table("usuarios")]
+    public class Usuario
+    {
+        public int Id { get; set; } //Atributo Id genera automáticamente la PK al realizar la migración
+        public string NombreUsu { get; set; }
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+}
+
+{
+    //Indicar tabla SQL
+    [Table("categorias")]
+    public class Categoria
+    {
+        public int Id { get; set; } //Atributo Id genera automáticamente la PK al realizar la migración
+        public string Nombre { get; set; }
+    }
+}
+
+5. Ver -> Otras Ventanas -> Consola del Administrador de paquetes
+6. COMANDOS:
+add-migration primerMigracion
+update-database
+
+7. Business -> PersonaBusiness -> GetPersonasById.cs:
+
+    public class GetPersonasById
+    {
+        //Implementar interfaz de MediatR para el model Persona
+        public class GetPersonaByIdComando : IRequest<Persona>
+        {
+            //Ingresar id a buscar
+            public int IdPersona { get; set; } 
+        }
+
+        //Crear clase que ejecute una validación, heredar clase de FluentValidation para utilizar con el constructor GetPersonaByIdComando
+        public class EjecutaValidacion : AbstractValidator<GetPersonaByIdComando>
+        {
+            public EjecutaValidacion()
+            {
+                //Método que verifica si en el Id ingresado existe una persona
+                RuleFor(p => p.IdPersona).NotEmpty();
+            }
+        }
+
+        //Implementar interfaz de MediatR para manejar constructor y model
+        public class Manejador : IRequestHandler<GetPersonaByIdComando, Persona>
+        {
+            //Proveer de contexto en constructor
+            private readonly ContextDB _contexto;
+            public Manejador(ContextDB context)
+            {
+                _contexto = context;
+            }
+
+            //Método de Interfaz implementada a sobreescribir, recibe un comando con un id y un token
+            public async Task<Persona> Handle(GetPersonaByIdComando comando, CancellationToken cancellationToken)
+            {
+                //Devuelve como resultado una persona
+                var result = new Persona();
+
+                try
+                {
+                    //Busca a una persona utilizando el contexto y su tabla Personas
+                    result = await _contexto.Personas.FirstOrDefaultAsync(c => c.Id == comando.IdPersona);
+                    if (result != null)
+                    {
+                        //Si el resultado no es nulo, devuelve resultado
+                        return result;
+                    }
+                    else
+                    {
+                        //Lanzar excepción en caso de error
+                        throw new Exception("No se encontró ninguna persona con el ID especificado.");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    //Mostrar mensaje de error
+                    Console.WriteLine("Error al obtener la persona: " + ex.Message);
+                    throw;
+                }
+            }
+        }
+    }
+
+8. Comandos -> LoginComando:
+
+    //Crear comando de inicio de sesión
+    public class LoginComando
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
+
+        public LoginComando(string email, string password)
+        {
+            Email = email;
+            Password = password;
+        }
+
+    }
+
+9. Controllers -> PersonaController.cs:
+
+{
+    //Tipo de controlador API, heredar clase ControllerBasse
+    [ApiController]
+    public class PersonaController : ControllerBase
+    {
+        //Proveer contexto e interfaz mediador en constructor
+        private readonly ContextDB _contexto;
+        private readonly IMediator _mediator;
+        public PersonaController(ContextDB contexto, IMediator mediator)
+        {
+            _contexto = contexto;
+            _mediator = mediator;
+        }
+
+        //Buscar todas las personas
+        //Devuelve un resultado de la acción y una lista de personas
+        [HttpGet]
+        [Route("api/personas/getPersonas")]
+        public ActionResult<List<Persona>> GetPersonas()
+        {
+            //Pasar tabla Personas en contexto a una lista
+            var personas = _contexto.Personas.ToList();
+            //Devolver resultado
+            return Ok(personas);
+        }
+
+        //Buscar personas por Id
+        //Ingresar id en ruta
+        //Devuelve una persona
+        [HttpGet]
+        [Route("api/personas/getPersonaById/{id}")]
+        public async Task<Persona> GetPersonaById(int id)
+        {
+            //FORMA 1
+            //var persona = _contexto.Personas.Where(c => c.Id == id).FirstOrDefault();
+            //return Ok(persona);
+
+            //FORMA 2
+            //Utilizar interfaz mediadora: enviar método para buscar personas por id para que el mismo sea manejado
+            return await _mediator.Send(new Business.PersonaBusiness.GetPersonasById.GetPersonaByIdComando
+            {
+                IdPersona = id
+            });
+        }
+
+
+        //GET (VIDEOS MATERIAL)
+        //Devuelve un resultado con una clase definida por nosotros
+        [HttpGet]
+        [Route("api/usuario/getUsuarios")]
+        public async Task<ResultadoBase> GetUsuarios()
+        {
+            //Devuelve una lista de usuarios 
+            var resultado = new UsuarioResultado();
+
+            //Asignacion de valores a resultado
+            resultado.ListaUsuarios = await _contexto.Usuarios.ToListAsync();
+            resultado.Ok = true;
+            resultado.StatusCode = 200;
+
+            //Devolucion de resultado
+            return resultado;
+        }
+
+        //POST (VIDEOS MATERIAL)
+        //Devuelve un resultado con una clase definida por nosotros
+        //Recibe un comando de login
+        [HttpPost]
+        [Route("api/usuario/login")]
+        public async Task<LoginResultado> Login(LoginComando comando)
+        {
+            var resultado = new LoginResultado();
+
+            //Compara las credenciales ingresadas en el comando con las existentes en todos los usuarios
+            var usuario = await _contexto.Usuarios.FirstOrDefaultAsync(c => c.Email.Equals(comando.Email) && c.Password.Equals(comando.Password));
+            if(usuario == null)
+            {
+                //Si no existe un usuario que coincida con las credenciales, devolver error
+                resultado.SetError("Email/Password incorrecto");
+                return resultado;   
+            }
+
+            //Asignación de valores y devolución de resultado
+            resultado.LoginResult = true;
+            resultado.Ok = true;
+            resultado.StatusCode = 200;
+            return resultado;
+        }
+    }
+}

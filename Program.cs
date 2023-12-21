@@ -19,9 +19,6 @@ builder.Services.AddDbContext<ContextDB>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("ConexionDatabase"));
 });
 
-//Añadir DbContext (OTRA FORMA)
-//builder.Services.AddEntityFrameworkNpgsql().AddDbContext<ContextDB>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("ConexionDatabase")));
-
 //Añadir MediaTR
 builder.Services.AddMediatR(typeof(GetPersonasById).Assembly);
 

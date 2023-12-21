@@ -36,7 +36,7 @@ namespace Prog3Api.NET.Business.PersonaBusiness
             }
 
             //Método de Interfaz implementada a sobreescribir, recibe un comando con un id y un token
-            public async Task<Persona> Handle(GetPersonaByIdComando comando, CancellationToken token)
+            public async Task<Persona> Handle(GetPersonaByIdComando comando, CancellationToken cancellationToken)
             {
                 //Devuelve como resultado una persona
                 var result = new Persona();
@@ -62,9 +62,6 @@ namespace Prog3Api.NET.Business.PersonaBusiness
                     Console.WriteLine("Error al obtener la persona: " + ex.Message);
                     throw;
                 }
-
-                //Devolver resultado
-                return result;
             }
         }
     }

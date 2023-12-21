@@ -1700,19 +1700,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Ignacio\\.nuget\\packages\\": {}
+    "C:\\Users\\niqui\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ESTUDIO\\PROYECTOS PORTFOLIO\\00.proyectosnombrados\\Proyecto API .NET Personas (mini)\\Prog3Api.NET.csproj",
+      "projectUniqueName": "C:\\Users\\niqui\\OneDrive\\Escritorio\\proyectos-linkedin\\Proyecto-Api.NET-Personas-Mini\\Prog3Api.NET.csproj",
       "projectName": "Prog3Api.NET",
-      "projectPath": "D:\\ESTUDIO\\PROYECTOS PORTFOLIO\\00.proyectosnombrados\\Proyecto API .NET Personas (mini)\\Prog3Api.NET.csproj",
-      "packagesPath": "C:\\Users\\Ignacio\\.nuget\\packages\\",
-      "outputPath": "D:\\ESTUDIO\\PROYECTOS PORTFOLIO\\00.proyectosnombrados\\Proyecto API .NET Personas (mini)\\obj\\",
+      "projectPath": "C:\\Users\\niqui\\OneDrive\\Escritorio\\proyectos-linkedin\\Proyecto-Api.NET-Personas-Mini\\Prog3Api.NET.csproj",
+      "packagesPath": "C:\\Users\\niqui\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\niqui\\OneDrive\\Escritorio\\proyectos-linkedin\\Proyecto-Api.NET-Personas-Mini\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Ignacio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\niqui\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1787,6 +1787,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.18, 6.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[6.0.18, 6.0.18]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.18, 6.0.18]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.18, 6.0.18]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
