@@ -10,7 +10,9 @@ API desarrollada en .NET que conecta a una base de datos creada en PosgreSQL con
 . Controllers (organización y gestión de solicitudes HTTP)
 
 . FluentValidator (facilitar validación de objetos y modelos)
+
 -----
+
 An API developed in .NET that connects to a database created in PostgreSQL using CodeFirst. Resources/practices applied:
 
 . Mediator pattern (to reduce complexity and dependencies between objects that communicate with each other)
