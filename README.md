@@ -16,7 +16,11 @@ API desarrollada en .NET que conecta a una base de datos creada en PosgreSQL con
 An API developed in .NET that connects to a database created in PostgreSQL using CodeFirst. Resources/practices applied:
 
 . Mediator pattern (to reduce complexity and dependencies between objects that communicate with each other)
+
 . Dependency injection (to decouple components so they can be reused, tested, and maintained more efficiently)
+
 . Entity Framework (to interact with databases and perform CRUD operations on entities)
+
 . Controllers (to organize and manage HTTP requests)
+
 . FluentValidator (to facilitate validation of objects and models)
